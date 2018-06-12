@@ -1,0 +1,19 @@
+/*
+Theme Name: Vertoh Child
+Theme URI: http://www.showthemes.com/2015-event-wordpress-theme-vertoh
+Description: Vertoh Child Theme
+Author:  Sarah Montoro
+Template: vertoh
+Author URI: http://www.sarahdevs.com
+Version: 1.3.65
+Text Domain: salient
+*/
+
+/*@import url("../vertoh-child/style.css")*/
+
+
+/*** GLOBAL ***/
+.page .fullwidth.breadcrumbs {
+display: none !important;
+}
+
