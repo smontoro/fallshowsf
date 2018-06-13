@@ -17,3 +17,30 @@ Text Domain: salient
 display: none !important;
 }
 
+/*** FOOTER ***/
+#site-footer {
+	padding-top: 50px;
+}
+
+i.fa {
+  border-radius: 60px;
+  padding: 0.2em 0.3em;
+  color: #000000 !important;
+  background-color: #9B9B9B;
+}
+
+i.fa.fa-facebook {
+	padding: 0.2em 0.45em;
+}
+
+.icons p {
+	padding-top: 20px;
+    color: yellow !important;
+    font-size: 20px;
+    padding-left: 26%;
+}
+
+.bottom-footer h4 {
+	color: yellow !important;
+	font-weight: 400;
+}
