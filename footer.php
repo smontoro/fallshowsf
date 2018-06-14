@@ -5,7 +5,7 @@ $esc_url_protocols = array('http', 'https', 'feed');
 <footer id="site-footer">
     <div class="container">
         <div class="bottom-footer">
-            <div class="icons pull-right">
+            <div class="icons">
                  <?php if (!empty($ef_options['ef_facebook'])) { ?>
                     <a href="<?php echo esc_url($ef_options['ef_facebook'], $esc_url_protocols); ?>" target="_blank" title="Facebook"><i class='fa fa-facebook'></i></a>
                 <?php } ?>
@@ -46,7 +46,7 @@ $esc_url_protocols = array('http', 'https', 'feed');
             </div>
 
             <div class="row widgets">
-                <?php dynamic_sidebar('footer'); ?>
+               <div id="footer-contact"><?php dynamic_sidebar('footer'); ?></div>
             </div>
         </div>
     </div>

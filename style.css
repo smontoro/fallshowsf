@@ -19,10 +19,18 @@ display: none !important;
 
 /*** FOOTER ***/
 #site-footer {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
-i.fa {
+#site-footer .widgets {
+  padding: 0 !important;
+}
+
+#site-footer .bottom-footer .icons i {
+    margin-left: 14px;
+}
+
+.icons i.fa {
   border-radius: 60px;
   padding: 0.2em 0.3em;
   color: #000000 !important;
@@ -30,17 +38,105 @@ i.fa {
 }
 
 i.fa.fa-facebook {
-	padding: 0.2em 0.45em;
+  padding: 0.2em 0.45em;
 }
 
-.icons p {
-	padding-top: 20px;
-    color: yellow !important;
-    font-size: 20px;
-    padding-left: 26%;
+#site-footer .bottom-footer .icons {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.bottom-footer h4 {
-	color: yellow !important;
-	font-weight: 400;
+.icons > p {
+  padding-top: 20px;
+  color: yellow !important;
+  font-size: 20px;
+  text-align: center;
 }
+
+#quick-links hr {
+    width: 100%;
+    margin: 12px 0;
+    height: 2px;
+    background: #9B9B9B !important;
+}
+
+#quick-links h4 {
+  color: yellow !important;
+  text-align: center;
+  line-height: 42px;
+}
+
+#quick-links  ul li{
+  color: #fff;
+  text-align: center;
+}
+
+#footer-contact {
+  padding-top: 50px;
+  padding-bottom: 0 !important;
+}
+
+#footer-contact > ul > li {
+  color: yellow;
+  display: inline-block;
+}
+
+#footer-contact h5 {
+  font-weight: 400;
+  color: yellow;
+  font-size: 16px;
+}
+
+#footer-contact i.fa {
+  color: yellow !important;
+  padding: 0 10px;
+}
+
+#footer-contact > p {
+  font-size: 12px;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #9B9B9B;
+}
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) {
+/*** FOOTER ***/
+#site-footer .widgets {
+  padding: 0; 
+}
+
+#site-footer .bottom-footer .icons {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.icons > p {
+  padding-left: 37%;
+  text-align: right;
+}
+
+#quick-links hr {
+    text-align: left;
+}
+
+#quick-links h4 {
+  text-align: left;
+}
+
+#quick-links  ul li{
+  text-align: left;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
