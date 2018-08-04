@@ -215,4 +215,17 @@ i.fa.fa-facebook {
   float: left;
 }
 
+/** CATALOGUE **/
+#catalogue {
+  margin-bottom: 10%;
+}
 
+.btn-catalogue {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 10px 53px;
+}
+
+.cat-video {
+  padding-bottom: 50px;
+}
