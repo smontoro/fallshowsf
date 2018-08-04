@@ -13,8 +13,19 @@ Text Domain: salient
 
 
 /*** GLOBAL ***/
+/* Remove breadcrumbs from pages */
 .page .fullwidth.breadcrumbs {
-display: none !important;
+    display: none;
+}
+/* Remove bredcrumbs from post */
+.breadcrumb {
+    display: none;
+}
+
+/*** HEADER ***/
+/* Remove the gold line from here slider */
+.site-slider hr{
+  display:none;
 }
 
 /*** FOOTER ***/
@@ -23,7 +34,7 @@ display: none !important;
 }
 
 #site-footer .widgets {
-  padding: 0 !important;
+  padding: 0;
 }
 
 #site-footer .bottom-footer .icons i {
@@ -33,7 +44,7 @@ display: none !important;
 .icons i.fa {
   border-radius: 60px;
   padding: 0.2em 0.3em;
-  color: #000000 !important;
+  color: #000000;
   background-color: #9B9B9B;
 }
 
@@ -48,7 +59,7 @@ i.fa.fa-facebook {
 
 .icons > p {
   padding-top: 20px;
-  color: yellow !important;
+  color: yellow;
   font-size: 20px;
   text-align: center;
 }
@@ -57,11 +68,11 @@ i.fa.fa-facebook {
     width: 100%;
     margin: 12px 0;
     height: 2px;
-    background: #9B9B9B !important;
+    background: #9B9B9B;
 }
 
 #quick-links h4 {
-  color: yellow !important;
+  color: yellow;
   text-align: center;
   line-height: 42px;
 }
@@ -73,7 +84,7 @@ i.fa.fa-facebook {
 
 #footer-contact {
   padding-top: 50px;
-  padding-bottom: 0 !important;
+  padding-bottom: 0;
 }
 
 #footer-contact > ul > li {
@@ -88,7 +99,7 @@ i.fa.fa-facebook {
 }
 
 #footer-contact i.fa {
-  color: yellow !important;
+  color: yellow;
   padding: 0 10px;
 }
 
@@ -102,41 +113,106 @@ i.fa.fa-facebook {
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) {
 /*** FOOTER ***/
-#site-footer .widgets {
+  #site-footer .widgets {
   padding: 0; 
-}
+  }
 
-#site-footer .bottom-footer .icons {
+  #site-footer .bottom-footer .icons {
   margin-bottom: 10px;
   text-align: right;
-}
+  }
 
-.icons > p {
+  .icons > p {
   padding-left: 37%;
   text-align: right;
-}
+  }
 
-#quick-links hr {
+  #quick-links hr {
     text-align: left;
-}
+  }
 
-#quick-links h4 {
+  #quick-links h4 {
   text-align: left;
-}
+  }
 
-#quick-links  ul li{
+  #quick-links  ul li{
   text-align: left;
-}
-
-
-
+  }
 
 }
 
 
+/** BLOG **/
+.category .entry .entry-title {
+    height: auto;
+}
 
+.entry {
+    min-height: 620px;
+}
 
+/** ABOUT **/
+#about {
+  padding-bottom: 75px;
+}
 
+.about-chairs h6 {
+  color: #BC9F60;
+  margin: 0;
+  font-size: 1.5rem;
+}
 
+.about-chairs, .about-gala, .about-founders, .about-past-show-chairs, .about-staff, .about-office {
+  margin-top: 50px;
+}
+
+.about-chairs div:nth-child(2), .about-gala div, .about-founders div, .about-past-show-chairs div, .about-staff div, .about-office div {
+  margin-top: 15px;
+}
+
+.about-chairs h5, .about-gala h5, .about-founders h5, .about-past-show-chairs h5, .about-staff h5, .about-office h5 {
+  margin: 0;
+  color: #595959;
+}
+
+.about-chairs hr, .about-gala hr, .about-founders hr, .about-past-show-chairs hr, .about-staff hr, .about-office hr {
+  margin: 0;
+  background: #595959;
+  float: right;
+}
+
+.about-chairs hr {
+  width: 90%;
+}
+
+.about-gala hr {
+  width: 82%;
+}
+
+.about-founders hr {
+  width: 86.5%;
+}
+
+.about-past-show-chairs hr {
+  width: 85%;
+}
+
+.about-staff hr {
+  width: 96%;
+}
+
+.about-office hr {
+  width: 80%;
+}
+
+.about-gala div:nth-child(3) {
+  width: 50%;
+  display: inline-block;
+}
+.about-gala div:nth-child(4) {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
 
 
