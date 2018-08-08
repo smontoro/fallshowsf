@@ -1,7 +1,5 @@
-<?php
+<?php /* Template Name: About */
 get_header();
-
-
 
 while (have_posts()) :
     the_post();
@@ -36,26 +34,14 @@ while (have_posts()) :
     $office_info_title= get_field('office_info_title');
     $office_address= get_field('office_address');
 
-
-
-
     vertoh_include_page_header();
     ?>
-    <section class="fullwidth breadcrumbs">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="<?php echo home_url(); ?>"><?php _e('About', 'vertoh'); ?></a></li>
-                <li class="active"><?php the_title() ?></li>
-            </ol>
-        </div>
-    </section>
-    <section class="content" id="about">
-        <div class="container">
+
+    <section class="container page-margin" id="about">
             <header class="section-header">
                 <h2><?php the_title() ?></h2>
             </header>
             <?php the_content(); ?>
-        </div>
 
         <div class="container about-chairs">
             <div>
@@ -124,10 +110,9 @@ while (have_posts()) :
                 <div><?php echo $office_address; ?></div>
             </div>
         </div>
-
-
-
     </section>
+
+
     <?php
 endwhile;
 get_footer();

@@ -22,6 +22,11 @@ Text Domain: salient
     display: none;
 }
 
+/* Page margin bottom */
+.page-margin {
+  margin-bottom: 10%;
+}
+
 /*** HEADER ***/
 /* Remove the gold line from here slider */
 .site-slider hr{
@@ -152,10 +157,6 @@ i.fa.fa-facebook {
 }
 
 /** ABOUT **/
-#about {
-  padding-bottom: 75px;
-}
-
 .about-chairs h6 {
   color: #BC9F60;
   margin: 0;
@@ -216,10 +217,6 @@ i.fa.fa-facebook {
 }
 
 /** CATALOGUE **/
-#catalogue {
-  margin-bottom: 10%;
-}
-
 .btn-catalogue {
   background-color: #fff;
   border: 2px solid black;
@@ -229,3 +226,64 @@ i.fa.fa-facebook {
 .cat-video {
   padding-bottom: 50px;
 }
+
+/** DESIGNERS & ARTISANS **/
+#designers-artisans-row {
+  line-height: 2.375em;
+}
+
+#designers-artisans-row a {
+  color: #595959;
+}
+
+#designers-artisans-row a:hover {
+  color:#bc9f60;
+}
+
+/** FAQ **/
+#faqPrimary > div:first-of-type, #faqPrimary img {
+  width: 44%;
+  display: inline-block;
+  float: left;
+}
+
+#faqPrimary > div:first-of-type {
+  margin-left: 7%;
+}
+
+#faqPrimary > div:first-of-type > ul > a {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  line-height: 3rem;
+}
+
+#faqPrimary img {
+    margin-top: 0;
+}
+
+#faqSecondary h3 {
+  padding-bottom: 3%;
+}
+
+#faqSecondary h4 {
+  font-size: 15px;
+  text-transform: none;
+  display: inline;
+  padding-left: 1.5%;
+}
+
+#faqSecondary div {
+  padding: 1.5% 0 1.5% 4%;
+}
+
+.faq-ticket-types {
+  line-height: 2.5rem;
+}
+
+#antiques ul li, .faq-ticket-types ul li {
+  list-style: initial !important;
+}
+
+
+

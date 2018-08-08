@@ -1,7 +1,5 @@
-<?php
+<?php /* Template Name: Catalogue */
 get_header();
-
-
 
 while (have_posts()) :
     the_post();
@@ -9,22 +7,10 @@ while (have_posts()) :
     $video= get_field('video');
     $cat_image= get_field('cat_image');
 
-
-
-
     vertoh_include_page_header();
     ?>
-    <section class="fullwidth breadcrumbs">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="<?php echo home_url(); ?>"><?php _e('Catalogue Advertising', 'vertoh'); ?></a></li>
-                <li class="active"><?php the_title() ?></li>
-            </ol>
-        </div>
-    </section>
 
-
-    <section class="container" id="catalogue">
+    <section class="container page-margin" id="catalogue">
          <header class="section-header">
             <h2><?php the_title() ?></h2>
         </header>
