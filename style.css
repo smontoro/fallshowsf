@@ -14,6 +14,10 @@ Text Domain: salient
 
 /*** GLOBAL ***/
 /* Remove breadcrumbs from pages */
+body {
+  font-size: 18px;
+}
+
 .page .fullwidth.breadcrumbs {
     display: none;
 }
@@ -27,13 +31,189 @@ Text Domain: salient
   margin-bottom: 10%;
 }
 
-/*** HEADER ***/
+/* ========================
+ HEADER 
+ ==========================*/
 /* Remove the gold line from here slider */
 .site-slider hr{
   display:none;
 }
 
-/*** FOOTER ***/
+/* ========================
+ABOUT
+ ==========================*/
+#aboutSecondary {
+  text-align: center;
+}
+
+.about-chairs h6 {
+  color: #BC9F60;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.about-chairs, .about-gala, .about-founders, .about-past-show-chairs, .about-staff, .about-office {
+  margin-top: 50px;
+}
+
+#aboutSecondary div{
+  margin-top: 15px;
+}
+
+#aboutSecondary h5 {
+  margin: 0;
+  color: #595959;
+  text-decoration: underline;
+}
+
+.about-gala div:nth-child(3) {
+  width: 50%;
+  display: inline-block;
+}
+.about-gala div:nth-child(4) {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+hr {
+  display: none;
+}
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) {
+  #aboutSecondary {
+    text-align: initial;
+  }
+
+  #aboutSecondary h5 {
+    text-decoration: none;
+  }
+
+  hr {
+    display: initial;
+  }
+
+ #aboutSecondary hr {
+    margin: 0;
+    background: #595959;
+    float: right;
+  }
+
+  .about-chairs hr {
+    width: 90%;
+  }
+
+  .about-gala hr {
+    width: 82%;
+  }
+
+  .about-founders hr {
+    width: 86.5%;
+  }
+
+  .about-past-show-chairs hr {
+    width: 85%;
+  }
+
+  .about-staff hr {
+    width: 96%;
+  }
+
+  .about-office hr {
+    width: 80%;
+  }
+}
+
+/* ========================
+ FAQ
+ ==========================*/
+#faqPrimary > div:first-of-type, #faqPrimary img {
+  width: 44%;
+  display: inline-block;
+  float: left;
+}
+
+#faqPrimary > div:first-of-type {
+  margin-left: 7%;
+}
+
+#faqPrimary > div:first-of-type > ul > a {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  line-height: 3rem;
+}
+
+#faqPrimary img {
+    margin-top: 0;
+}
+
+#faqSecondary h3 {
+  padding-bottom: 3%;
+}
+
+#faqSecondary h4 {
+  font-size: 15px;
+  text-transform: none;
+  display: inline;
+  padding-left: 1.5%;
+}
+
+#faqSecondary div {
+  padding: 1.5% 0 1.5% 4%;
+}
+
+.faq-ticket-types {
+  line-height: 2.5rem;
+}
+
+#antiques ul li, .faq-ticket-types ul li {
+  list-style: initial !important;
+}
+
+/* ========================
+ DESIGNERS & ARTISANS
+ ==========================*/
+#designers-artisans-row {
+  line-height: 2.375em;
+}
+
+#designers-artisans-row a {
+  color: #595959;
+}
+
+#designers-artisans-row a:hover {
+  color:#bc9f60;
+}
+
+/* ========================
+  CATALOGUE
+ ==========================*/
+.btn-catalogue {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 10px 53px;
+}
+
+.cat-video {
+  padding-bottom: 50px;
+}
+
+/* ========================
+BLOG
+ ==========================*/
+.category .entry .entry-title {
+    height: auto;
+}
+
+.entry {
+    min-height: 620px;
+}
+
+/* ========================
+ FOOTER
+ ==========================*/
 #site-footer {
   padding-top: 50px;
 }
@@ -117,7 +297,6 @@ i.fa.fa-facebook {
 
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) {
-/*** FOOTER ***/
   #site-footer .widgets {
   padding: 0; 
   }
@@ -143,147 +322,6 @@ i.fa.fa-facebook {
   #quick-links  ul li{
   text-align: left;
   }
-
 }
-
-
-/** BLOG **/
-.category .entry .entry-title {
-    height: auto;
-}
-
-.entry {
-    min-height: 620px;
-}
-
-/** ABOUT **/
-.about-chairs h6 {
-  color: #BC9F60;
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.about-chairs, .about-gala, .about-founders, .about-past-show-chairs, .about-staff, .about-office {
-  margin-top: 50px;
-}
-
-.about-chairs div:nth-child(2), .about-gala div, .about-founders div, .about-past-show-chairs div, .about-staff div, .about-office div {
-  margin-top: 15px;
-}
-
-.about-chairs h5, .about-gala h5, .about-founders h5, .about-past-show-chairs h5, .about-staff h5, .about-office h5 {
-  margin: 0;
-  color: #595959;
-}
-
-.about-chairs hr, .about-gala hr, .about-founders hr, .about-past-show-chairs hr, .about-staff hr, .about-office hr {
-  margin: 0;
-  background: #595959;
-  float: right;
-}
-
-.about-chairs hr {
-  width: 90%;
-}
-
-.about-gala hr {
-  width: 82%;
-}
-
-.about-founders hr {
-  width: 86.5%;
-}
-
-.about-past-show-chairs hr {
-  width: 85%;
-}
-
-.about-staff hr {
-  width: 96%;
-}
-
-.about-office hr {
-  width: 80%;
-}
-
-.about-gala div:nth-child(3) {
-  width: 50%;
-  display: inline-block;
-}
-.about-gala div:nth-child(4) {
-  width: 50%;
-  display: inline-block;
-  float: left;
-}
-
-/** CATALOGUE **/
-.btn-catalogue {
-  background-color: #fff;
-  border: 2px solid black;
-  padding: 10px 53px;
-}
-
-.cat-video {
-  padding-bottom: 50px;
-}
-
-/** DESIGNERS & ARTISANS **/
-#designers-artisans-row {
-  line-height: 2.375em;
-}
-
-#designers-artisans-row a {
-  color: #595959;
-}
-
-#designers-artisans-row a:hover {
-  color:#bc9f60;
-}
-
-/** FAQ **/
-#faqPrimary > div:first-of-type, #faqPrimary img {
-  width: 44%;
-  display: inline-block;
-  float: left;
-}
-
-#faqPrimary > div:first-of-type {
-  margin-left: 7%;
-}
-
-#faqPrimary > div:first-of-type > ul > a {
-  display: block;
-  color: black;
-  text-decoration: underline;
-  line-height: 3rem;
-}
-
-#faqPrimary img {
-    margin-top: 0;
-}
-
-#faqSecondary h3 {
-  padding-bottom: 3%;
-}
-
-#faqSecondary h4 {
-  font-size: 15px;
-  text-transform: none;
-  display: inline;
-  padding-left: 1.5%;
-}
-
-#faqSecondary div {
-  padding: 1.5% 0 1.5% 4%;
-}
-
-.faq-ticket-types {
-  line-height: 2.5rem;
-}
-
-#antiques ul li, .faq-ticket-types ul li {
-  list-style: initial !important;
-}
-
 
 
