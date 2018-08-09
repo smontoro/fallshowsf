@@ -14,23 +14,26 @@ while (have_posts()) :
     vertoh_include_page_header();
     ?>
 
-    <section class="container page-margin" id="designers">
-         <header class="section-header">
-            <h2><?php the_title() ?></h2>
-        </header>
+    <section class="container page-padding" id="designers">
+        <div id="designersPrimary">
+            <header class="section-header">
+                <h2 class="page-title"><?php the_title() ?></h2>
+            </header>
 
-        <div class="row">
-            <div class="col-sm-6">
-                <?php the_content(); ?>
-            </div><!--/col-6-->
-            <div class="col-sm-6">
-                <div>
-                    <img src="<?php echo $designers_image; ?>">
-                </div>     
-            </div><!--/col-6-->
-        </div><!--/row -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <?php the_content(); ?>
+                </div><!--/col-6-->
+                <div class="col-sm-6">
+                    <div>
+                        <img class="image-fluid" src="<?php echo $designers_image; ?>">
+                    </div>     
+                </div><!--/col-6-->
+            </div><!--/row -->
+        </div>
+         
 
-        <div class="row" id="designers-artisans-row">
+        <div class="row" id="designersSecondary">
             <div class="col-sm-4">
                 <?php echo $row_1_designers; ?>
             </div>

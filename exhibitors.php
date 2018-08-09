@@ -53,14 +53,6 @@ while (have_posts()) :
     remove_filter('posts_where', 'vertoh_exhibitor_text_posts_where');
     ?>
     <div class="has-sticky stickem-container">
-        <section class="fullwidth breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="<?php echo home_url(); ?>"><?php _e('Home', 'vertoh'); ?></a></li>
-                    <li class="active"><?php the_title(); ?></li>
-                </ol>
-            </div>
-        </section>
         <section class="fullwidth top-margin page-nav-links small-section">
             <div class="container">
                 <div class="">
