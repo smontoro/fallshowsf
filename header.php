@@ -57,11 +57,28 @@ if (is_home()) {
             <!-- Expanded Header Start       -->
             <header id="site-header" class="header <?php echo is_home() ? $bar_class : 'expandedHeaderCntr'; ?> header-sticked <?php echo $no_header_scroll_class; ?>">  
                 <div class="expandedHeader">
-                    <div class="container clearfix cntrs">
-                        <a class="expandedLogo pull-left" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo(!empty($custom_logo_url)) ? $custom_logo_url : get_template_directory_uri() . '/images/logo.png'; ?>" alt="" /></a>
+                    <div class="container-fluid clearfix cntrs">         
+                        <div class="expandedLogo row">
+                            <div class="col-sm-4">
+                                <p>OCTOBER 11 - 14, 2018</p>
+                                <p><strong class="nav-bold">OUR 37TH YEAR</strong></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="<?php echo(!empty($custom_logo_url)) ? $custom_logo_url : get_template_directory_uri() . '/images/logo.png'; ?>" alt="" class="image-fluid"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <p><strong class="nav-bold">THE ANNUAL BENFIT FOR</strong></p>
+                                <p>ENTERPRISE FOR YOUTH</p>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+
                         <div class="expandedNavigation">
                             <nav class="navbar" role="navigation">
-                                <div class="container">
+                                <div class="container-fluid">
                                     <div class="navbar-header">
                                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                             <span class="sr-only">Toggle navigation</span>
@@ -74,7 +91,7 @@ if (is_home()) {
                                         <?php
                                         wp_nav_menu(array(
                                             'theme_location' => 'primary',
-                                            'menu_class'     => 'nav navbar-nav pull-right',
+                                            'menu_class'     => 'nav', 
                                             'menu_id'        => '',
                                             'container'      => 'ul'
                                         ));

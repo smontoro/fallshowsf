@@ -3,44 +3,49 @@ $ef_options        = EF_Event_Options::get_theme_options();
 $esc_url_protocols = array('http', 'https', 'feed');
 ?>
 
-<footer>
-  
 
-        <div id="footer-sidebar1" class="container-fluid row">
-            <div class="col-sm-6">
+    <div id="footer-sidebar1" class="row">
+        <div class="col-sm-6">
+            <div class="signup">
                 <p>Recieve event invitations 
-                    <br>
+                <br>
                 and show news by email</p>
                 <p>We send an average of one e-newsletter a month</p>
             </div>
-            <div class="col-sm-6">
+            
+        </div>
+        <div class="col-sm-6">
+            <div class="signup">
                 <?php
-                    if(is_active_sidebar('footer-sidebar-1')){
-                    dynamic_sidebar('footer-sidebar-1');
-                    }
-                ?>
+                if(is_active_sidebar('footer-sidebar-1')){
+                dynamic_sidebar('footer-sidebar-1');
+                }
+            ?>
             </div>
         </div>
-
-        <div id="footer-sidebar2">
-        <?php
-        if(is_active_sidebar('footer-sidebar-2')){
-        dynamic_sidebar('footer-sidebar-2');
-        }
-        ?>
+    </div>
+    
+   
+    <div id="footer-sidebar2">
+        <div class="col-sm-6">
+            <?php
+                if(is_active_sidebar('footer-sidebar-2')){
+                dynamic_sidebar('footer-sidebar-2');
+                }
+            ?>
+            <p>CONNECT WITH US!</p>
         </div>
+    </div>
 
-        <div id="footer-sidebar3">
+    <div id="footer-sidebar3">
         <?php
-        if(is_active_sidebar('footer-sidebar-3')){
-        dynamic_sidebar('footer-sidebar-3');
-        }
-        ?>
-        </div>
+                if(is_active_sidebar('footer-sidebar-3')){
+                dynamic_sidebar('footer-sidebar-3');
+                }
+            ?>
+    </div>
 
 
-
-</footer>
 
 <?php wp_footer(); ?>
 

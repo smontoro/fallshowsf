@@ -40,7 +40,34 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 	'after_title' => '</h3>',
 	) );
 
+/* =======================================
+	Custom Post Types
+   =======================================
+*/
+	function create_custom_post_types() {
+
+	register_post_type('cultural-partners',
+		array(
+			'labels' => array (
+				'name' => 'Cultural Partners',
+				'singular_name' => 'Cultural Partners'
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array (
+				'slug' => 'cultural-partners'
+				),
+			'supports' => array('title', 'editor', 'thumbnail')
+			)
+		);
+}
+
+
 
 
 ?>
+
+
+
+
 

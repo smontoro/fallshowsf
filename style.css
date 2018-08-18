@@ -11,11 +11,13 @@ Text Domain: salient
 
 /*@import url("../vertoh-child/style.css")*/
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /*** GLOBAL ***/
 /* Remove breadcrumbs from pages */
 body {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .page .fullwidth.breadcrumbs {
@@ -32,6 +34,9 @@ body {
   padding-top: 5%;
 }
 
+.padding-bottom {
+  padding-bottom: 8%;
+}
 
 .page-title:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
@@ -42,6 +47,65 @@ body {
     border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
 }
 
+section.fullwidth .section-header > h2, section.content .section-header > h2, .section-header > h2 {
+    font-family: Cinzel;
+    font-weight: normal;
+}
+
+/* ========================
+NAV
+ ==========================*/
+#menu-main {
+  font-size: 18px;
+  background-color: lightgrey;
+}
+
+.expandedLogo {
+  line-height: 18px !important;
+  margin-bottom: 0 !important;
+  font-family: Cinzel;
+}
+
+.expandedLogo img {
+  width: 80%;
+}
+
+.navbar-header {
+  display: inline-block;
+}
+
+.sub-menu {
+  font-size: 15px;
+}
+
+.expandedLogo div:first-child, .expandedLogo div:last-child {
+    display: none;
+  }
+
+.expandedHeader .navbar-toggle {
+     margin: 0;
+}
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) {
+    #site-header {
+    margin-bottom: 2%;
+  }
+    .expandedLogo div:first-child, .expandedLogo div:last-child {
+    padding-top: 50px;
+    display: initial;
+  }
+    .navbar div {
+    padding: 0;
+  }
+  .nav-bold {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+
+}
+
 /* ========================
  HEADER 
  ==========================*/
@@ -49,6 +113,129 @@ body {
 .site-slider hr{
   display:none;
 }
+
+/* ========================
+ HOME
+ ==========================*/
+ /**Testimonials**/
+.strong-view.modern .testimonial-content p:before {
+    width: 300px !important;
+    content: url('http://fallshowsf.local/wp-content/uploads/2018/08/left-two-quotes.png') !important;
+    padding-right: 10px;
+}
+
+.strong-view.modern .testimonial-content p:after {
+    width: 300px !important;
+    content: url('http://fallshowsf.local/wp-content/uploads/2018/08/right-two-quotes.png') !important;
+    padding-left: 10px;
+}
+
+.strong-view.modern .testimonial-content:before,  .strong-view.modern .testimonial-content:after {
+  display: none !important;
+}
+
+.strong-view {
+  height: 300px;
+  background-color: #efefef;
+}
+
+.wpmslider-wrapper {
+  padding-top: 5%;
+}
+
+.testimonial-client {
+  float: right;
+  padding-right: 30%;
+}
+
+.testimonial-content {
+  font-size: 35px !important;
+  line-height: 50px;
+}
+
+.testimonial-name:before {
+  content: '-';
+  font-size: 30px;
+}
+/**Video**/
+#homeVideo {
+  padding: 5% 0;
+}
+#homeVideo iframe {
+  height: 500px;
+  width: 800px;
+}
+#homeVideo p {
+  padding-left: 16%;
+  font-weight: bold;
+}
+/**Vignettes**/
+.vignettes-title {
+  font-weight: bold;
+  color: #BC9F60;
+}
+
+/**Designers & Artisans**/
+#designerHome button {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 10px 30px;
+}
+
+/**Lectures**/
+#lectureSpeakers {
+ font-size: 16px;
+}
+
+#lectures button {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 10px 30px;
+}
+
+#lectures img {
+  padding-top: 14%;
+}
+
+/**Blog**/
+#carousel-articles .articles-content {
+  display: none !important;
+}
+
+#tile_latestnews h2 {
+    float: left;
+    color: #999999;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+#tile_latestnews header::after {
+  display: none;
+}
+
+#tile_latestnews header {
+  margin-bottom: 0;
+  margin-left: 2%;
+}
+
+#tile_latestnews .articles-title {
+    height: 100px;
+}
+
+/**Instagram**/
+#instagram {
+  margin-bottom: 5%;
+}
+
+#instagram p {
+  font-size: 20px;
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 2%;
+}
+
+
+    
 
 /* ========================
 ABOUT
@@ -234,9 +421,8 @@ hr {
 /* ========================
  FLORISTS
  ==========================*/
-
 #florists {
-  background: url('http://fallshowsf.local/wp-content/uploads/2018/08/florists.jpg') no-repeat fixed center;
+  background: url('http://fallshowsf.local/wp-content/uploads/2018/08/fas-florists.jpg') no-repeat fixed center;
   background-size: cover;
 }
 
@@ -273,37 +459,24 @@ BLOG
 /* ========================
  FOOTER
  ==========================*/
+ /** WIDGET 1 **/
 #footer-sidebar1 {
   background-color: #EAE6E6;
-  padding: 5%;
   color: #9B9B9B;
   width: 100%;
-  height: 250px;
+  height: 100%;
+  margin: 0;
+  padding: 10% 0;
+  text-align: center;
 }
 
-#footer-sidebar1 div:first-child {
-  position: absolute;
-  left: 18%;
+.signup {
+    padding-left: 14%;
+    padding-right: 17%;
 }
-
-#footer-sidebar1 div:last-child{
-  position: absolute;
-  left: 51%;
-  width: 25%;
-}
-
-#footer-sidebar1 p:first-child, #footer-sidebar1 p:nth-child(2) {
-  color: #3e5a63; 
-} 
 
 #footer-sidebar1 p:first-child {
-  font-size: 30px;
-  line-height: 35px;
   font-weight: bold;
-}
-
-#footer-sidebar1 p:nth-child(2) {
-  font-size: 15px;
 }
 
 #footer-sidebar1 label {
@@ -312,12 +485,18 @@ BLOG
   font-size: 1.5rem;
 }
 
-#footer-sidebar1 input {
+.benchmarkemaillite-subscribe input {
   border: 1px solid black;
-  padding: 5%;
   border-radius: 0;
 }
 
+#footer-sidebar1 p:first-child, #footer-sidebar1 p:nth-child(2) {
+  color: #3e5a63; 
+} 
+
+#footer-sidebar1 p:nth-child(2) {
+  font-size: 12px;
+}
 
 #footer-sidebar1 button {
   background-color: transparent !important;
@@ -325,126 +504,157 @@ BLOG
   color: black !important;
 }
 
-
-
-
-#site-footer {
-  padding-top: 50px;
+ /** WIDGET 2 **/
+#footer-sidebar2 {
+  background-color: #435A62;
+  width: 100%;
+  height: 225px;
+  padding: 3%;
 }
 
-#site-footer .widgets {
+#footer-sidebar2 div:first-child {
   padding: 0;
 }
 
-/*site-footer .bottom-footer .icons i {
-    margin-left: 14px;
+section.fullwidth.social-links .icons i{
+  font-size: 45px !important;
+  margin: 0 !important;
 }
 
-.icons i.fa {
-  border-radius: 60px;
-  padding: 0.2em 0.3em;
-  color: #000000;
-  background-color: #9B9B9B;
+section.fullwidth.social-links .icons a{
+  margin: 0 !important;
 }
 
-i.fa.fa-facebook {
-  padding: 0.2em 0.45em;
+#tile_connect {
+  margin: 0;
+  background-color: #435A62;
+  padding: 0;
 }
 
-#site-footer .bottom-footer .icons {
-    margin-bottom: 10px;
-    text-align: center;
+#footer-sidebar2 i.fa {
+  color: #EAE6E6;
+  font-size: 45px;
 }
 
-.icons > p {
-  padding-top: 20px;
-  color: yellow;
+#footer-sidebar2 div{
+  float: right;
+}
+
+#footer-sidebar2 p {
+  float: right;
+  color: #EAE6E6;
   font-size: 20px;
-  text-align: center;
-}*/
-
-#quick-links hr {
-    width: 100%;
-    margin: 12px 0;
-    height: 2px;
-    background: #9B9B9B;
+  margin-right: 20px;
 }
 
-#quick-links h4 {
-  color: yellow;
-  text-align: center;
-  line-height: 42px;
+ /** WIDGET 3 **/
+ #footer-sidebar3 {
+  color: #EAE6E6;
+  background-color: #435A62;
+  padding-bottom: 5%;
+ }
+
+ #quick-links h4 {
+  color: #EAE6E6;
+ }
+
+ #quick-links h4:after {
+    content: "";  
+    display: block; 
+    width: 20%; 
+    padding: 10px;
+    border-bottom: 1px solid #EAE6E6; 
+    margin-left: 40%;
 }
 
-#quick-links  ul li{
-  color: #fff;
-  text-align: center;
+#quick-links .row {
+  padding-top: 15px;
 }
 
 #footer-contact {
-  padding-top: 50px;
-  padding-bottom: 0;
-}
-
-#footer-contact > ul > li {
-  color: yellow;
-  display: inline-block;
+  padding-top: 5%;
+  color: #EAE6E6;
 }
 
 #footer-contact h5 {
-  font-weight: 400;
-  color: yellow;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 2px;
 }
 
 #footer-contact i.fa {
-  color: yellow;
-  padding: 0 10px;
+  font-size: 30px;
+  padding-right: 5px;
 }
 
-#footer-contact > p {
-  font-size: 12px;
-  padding-top: 10px;
-  font-weight: bold;
-  color: #9B9B9B;
+#footer-contact h5, #footer-contact a {
+  color: #EAE6E6;
+}
+
+#footer-contact ul li {
+  display: inline-block;
+  padding: 1%;
+}
+
+#footer-contact p {
+  padding-top: 21px;
+}
+
+#quick-links {
+  text-align: center;
+  font-size: 15px;
 }
 
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) {
-  #site-footer {
-    background-color: #435A62;
+  #footer-sidebar1 {
+    padding: 5% 10%;
+    text-align: initial;
   }
 
-  section.fullwidth.gold {
-    background: #435A62;
-    color: black;
+  .signup p {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  #footer-sidebar1 p:first-child {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: initial;
+  }
+
+  #footer-sidebar1 p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  section.fullwidth.social-links .icons i{
+  font-size: 55px !important;
+ 
 }
 
-  #site-footer .widgets {
-  padding: 0; 
-  }
-
-  #site-footer .bottom-footer .icons {
-  margin-bottom: 10px;
-  text-align: right;
-  }
-
-  .icons > p {
-  padding-left: 37%;
-  text-align: right;
-  }
-
-  #quick-links hr {
-    text-align: left;
-  }
-
-  #quick-links h4 {
-  text-align: left;
-  }
-
-  #quick-links  ul li{
-  text-align: left;
-  }
+section.fullwidth.social-links .icons a{
+  padding: 0 38px;
+ 
 }
 
+#quick-links h4:after {
+    margin-left: 0;
+}
 
+#quick-links {
+  text-align: initial;
+  font-size: 20px;
+}
+
+}
+
+/* ========================
+ CULTURAL PARTNERS
+ ==========================*/
+
+#culturalPrimary img {
+  padding: 15px 0;
+}
+
+#cultural p {
+  padding-top: 3%;
+}
