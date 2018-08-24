@@ -10,16 +10,17 @@ while (have_posts()) :
     vertoh_include_page_header();
     ?>
 
+<section class="page-padding container" id="faq">
     <header class="section-header">
             <h2 class="page-title"><?php the_title() ?></h2>
     </header>
 
-    <section id="faqPrimary" class="container">
+    <div id="faqPrimary">
         <div><?php echo $faq_nav; ?></div>
         <img class="image-fluid" src="<?php echo $faq_image; ?>">
-    </section>
+    </div>
 
-    <section id="faqSecondary" class="container page-padding">
+    <section id="faqSecondary">
         <div id="location">
             <h3>Location</h3>
             <img class="alignnone size-full wp-image-1020" src="http://fallshowsf.local/wp-content/uploads/2018/08/information.png" alt="" width="24" height="24" /> 
@@ -526,6 +527,7 @@ while (have_posts()) :
 
         </div>
     </div>
+</section>
 </section>
 
 

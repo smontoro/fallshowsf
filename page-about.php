@@ -38,14 +38,15 @@ while (have_posts()) :
     ?>
 
     <section class="container page-padding" id="about">
+        <header class="section-header">
+            <h2 class="page-title"><?php the_title() ?></h2>
+        </header>
+
         <div id="aboutPrimary">
-            <header class="section-header">
-                <h2 class="page-title"><?php the_title() ?></h2>
-            </header>
             <?php the_content(); ?>
         </div>
             
-        <div class="container" id="aboutSecondary">
+        <div id="aboutSecondary">
 
             <div class="row about-chairs">
                 <div>

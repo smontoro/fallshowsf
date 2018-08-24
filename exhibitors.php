@@ -1,6 +1,4 @@
-<?php
-/*
- * Template Name: Exhibitors
+<?php /* Template Name: Exhibitors
  *
  * @package WordPress
  * @subpackage Vertoh

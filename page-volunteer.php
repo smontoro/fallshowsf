@@ -13,25 +13,29 @@ while (have_posts()) :
     vertoh_include_page_header();
     ?>
 
-    <section id="volunteer" class="page-padding">
+    <section id="volunteer" class="page-padding container">
         <header class="section-header">
             <h2 class="page-title"><?php the_title() ?></h2>
         </header>
 
-        <div class="container">
-            <div id="volunteerPrimary" class="row container">
-                 <?php the_content(); ?>
-            </div>
+        <div id="volunteerPrimary" class="row">
+             <?php the_content(); ?>
         </div>
                 
-        <div id="volunteerSecondary" class="row container col-sm-4">
+        <div id="volunteerSecondary" class="row">
             <div class="col-sm-6">
                 <?php echo $benefits; ?>
+                <br>
+                <?php echo $volunteer_opportunities; ?>
             </div>
             <div class="col-sm-6">
-                <img src="<? echo $volunteer_image; ?>">
+                <img src="<?php echo $volunteer_image; ?>">
             </div>
-        </div>         
+        </div>     
+
+        <div id="volunteerTertiary" class="row">
+            <?php echo $committees; ?>
+        </div>    
         
     </section>
 
