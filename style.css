@@ -490,6 +490,15 @@ BLOG
     min-height: 620px !important;
 }
 
+.category .entry .entry-title {
+    height: auto !important;
+}
+ 
+@media(min-width: 900px) {
+ .entry {
+ min-height: 770px !important;
+}}
+
 /* ========================
  FOOTER
  ==========================*/
@@ -579,6 +588,12 @@ section.fullwidth.social-links .icons a{
   color: #EAE6E6;
   font-size: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: 576px) {
+  #footer-sidebar2 div:first-child {
+    padding-right: 10%;
+  }
 }
 
  /** WIDGET 3 **/
@@ -697,6 +712,12 @@ section.fullwidth.social-links .icons a{
 /* ========================
 PRESS
  ==========================*/
+.press-post-content {
+    border-bottom: 1px solid #bc9f60;
+    margin-bottom: 25px;
+    padding-bottom: 40px;
+}
+
 #press img {
   height: 300px;
   width: 300px;
@@ -704,11 +725,46 @@ PRESS
 
 #press .press-content {
   padding-top: 5%;
+  min-height: auto;
 }
 
-#press h2 {
-  padding-top: 5%;
+.press-content a {
+    font-size: 18px;
+    color: #595959;
+    font-weight: bold;
 }
+
+.press-content a:hover {
+  color: #bc9f60;
+}
+
+.press-content .readmore-icon {
+  font-size: 11px;
+} 
+
+.press-content .entry-date {
+    position: relative;
+    z-index: 1;
+    padding: 6px 9px;
+    line-height: 1em;
+    background: rgba(188, 159, 96, 0.8);
+    color: white;
+    bottom: 34px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+ 
+@media(min-width: 900px) {
+ #press .press-content {
+  min-height: 550px;
+  }
+  .press-post-content {
+    height: 150px;
+  }
+
+}
+
 
 /* ========================
 VOLUNTEER
@@ -755,13 +811,77 @@ EXHIBITORS
   line-height: initial;
 }
 
+/* ========================
+SPONSORS
+ ==========================*/
 
+.page-id-519 h2 {
+    font-family: Cinzel;
+    font-weight: normal;
+    font-size: 40px !important;
+}
 
+.page-id-519 h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top: 12px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
 
+/* ========================
+TICKETS
+ ==========================*/
+.ticket-box .box-content {
+  display: none !important;
+}
 
+#ticketsSecondary ul {
+  padding: 0 5%;
+  line-height: initial;
+}
 
+#ticketsSecondary ul li {
+  list-style: initial;
+  font-size: 18px;
+}
 
+.ticket-box .box-price {
+    font-size: 30px;
+    font-weight: initial;
+}
 
+.section-button {
+  display: none;
+}
+
+.ticket-box {
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.box-price {
+  padding-top: 10%;
+}
+
+#ticketsPrimary button {
+  background-color: #fff;
+    border: 2px solid black;
+    padding: 10px 30px;
+}
+
+#ticketsPrimary div:first-child {
+  border-right: 2px solid grey;
+  padding-left: 10%;
+}
+#ticketsPrimary div:last-child {
+  padding-left: 12%;
+}
+
+.ef_tickets header {
+  display: none;
+}
 
 
 

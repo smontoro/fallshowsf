@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-<section id="press" class="container">
+<section id="press" class="container page-padding">
     <header class="section-header">
         <h2 class="page-title"><?php the_title() ?></h2>
     </header>
@@ -24,21 +24,36 @@ get_header();
 
             $press_link= get_field('press_link');
             $publisher = get_field('publisher');
-            $press_file = get_field('press_file');
+            $press_date = get_field('press_date');
           
 
             ?>
 
         <div class="press-content col-sm-3">
-            
-           <?php the_post_thumbnail(); ?>
+            <div class="tint">
+                <?php the_post_thumbnail(); ?>
+                <span class="entry-date">
+                    <?php echo $press_date; ?>
+                </span>
+            </div>   
 
             <div class="press-post-content">
               <h5><?php the_title(); ?></h5>
               <p><?php echo $publisher; ?></p>
-            </div>
+           
 
-            <a target="_blank" href="<?php echo $press_link; ?>"><p>Read More >></p></a>
+            <a target="_blank" href="<?php echo $press_link; ?>">
+                <p>Read More 
+                    <span class="readmore-icon fa-stack fa-sm">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-plus fa-stack-1x"></i>
+                    </span>
+                </p>
+            </a>
+
+             </div>
+
+           
 
         </div><!--end col-->
 
