@@ -883,6 +883,57 @@ TICKETS
   display: none;
 }
 
+/* ========================
+TICKETS
+ ==========================*/
+#visit .row {
+  border-bottom: 2px solid lightgrey;
+  padding: 5% 0;
+}
+
+#visit5 ul li {
+  list-style: initial;
+  margin-left: 5%;
+  padding: 1.5% 0;
+}
+
+#visit .row:last-child {
+  border-bottom: none;
+}
+
+/* ========================
+SCHEDULE OF EVENTS
+ ==========================*/
+.page-template-schedule h1 {
+  font-family: Cinzel;
+  font-weight: normal;
+  font-size: 40px !important;
+  padding: 3% 0;
+}
+
+.page-template-schedule h1:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 20%; 
+    padding-top: 12px;
+    border-bottom: 1px solid black; 
+}
+
+.page-template-schedule .widget-content {
+  display: none;
+}
+
+.fa-filter:before {
+    content: "\f002";
+    color: #fff;
+}
+
+.schedule-heading, .schedule-heading .stickit {
+  background-color: grey;
+  color: #fff;
+}
+
 
 
 
