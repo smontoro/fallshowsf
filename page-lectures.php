@@ -1,10 +1,13 @@
-<?php /* Template Name: Enterprise*/
+<?php /* Template Name: Lectures*/
 
 
 while (have_posts()) :
     the_post();
 
-    $enterprise_img= get_field('enterprise_img');
+    $speakers= get_field('speakers');
+    $image= get_field('image');
+
+
 
     vertoh_include_page_header();
     ?>
@@ -13,12 +16,16 @@ while (have_posts()) :
             <div class="row">
                 <div class="col-sm-6">
                     <div><?php the_content(); ?></div>
-                    <a href="http://enterpriseforyouth.org/" target="_blank" class="section-button">Learn More</a>
+                    <br>
+                    <p>SPEAKERS</p>
+                    <div id="lectureSpeakers"><?php echo $speakers; ?></div>
+                    <a class="section-button">VIEW EVENT SCHEDULE</a>
                 </div>
                 <div class="col-sm-6">
-                    <?php the_post_thumbnail(); ?>
+                    <img class="img-fluid" src="<?php echo $image; ?>">
                 </div>               
             </div>
+
     </section>
    
 

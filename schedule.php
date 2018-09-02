@@ -67,18 +67,12 @@ while (have_posts()) :
         if (empty($text_color))
             $text_color = '#000000';
         ?>
-        <section class="fullwidth parallax no-margin" style='background-image: url("<?php echo wp_get_attachment_url(get_post_meta(get_the_ID(), 'schedule_calltoaction_image', true)); ?>")'>
-            <div class="container">
-                <h2 style="color: <?php echo $text_color; ?>;"><?php echo get_post_meta(get_the_ID(), 'schedule_calltoaction_title', true); ?></h2>
-                <p style="color: <?php echo $text_color; ?>;"><?php echo get_post_meta(get_the_ID(), 'schedule_calltoaction_subtitle', true); ?></p>
-                <a href="<?php echo get_post_meta(get_the_ID(), 'schedule_calltoaction_buttonurl', true); ?>" class="section-button" style="color: <?php echo $text_color; ?>;"><?php echo get_post_meta(get_the_ID(), 'schedule_calltoaction_buttontext', true); ?></a>
-            </div>
-        </section>
+        
     <?php } ?>
     <ul id="schedule_filters" style="display:none;">
         <?php if (!empty($session_tracks)) { ?>
             <li class="std-dropdown">
-                <a href="javascript:void(0)"><?php _e('Search by event', 'vertoh'); ?></a>
+                <a href="javascript:void(0)"><?php _e('Filter by event', 'vertoh'); ?></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#" data-track="0"><?php _e('All', 'vertoh'); ?></a></li>
                     <?php foreach ($session_tracks as $session_track) { ?>
@@ -90,7 +84,7 @@ while (have_posts()) :
 
         <?php if (!empty($session_dates)) { ?>
             <li class="std-dropdown">
-                <a href="javascript:void(0)"><?php _e('Search by day', 'vertoh'); ?></a>
+                <a href="javascript:void(0)"><?php _e('Filter by day', 'vertoh'); ?></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#" data-timestamp="0"><?php _e('All', 'vertoh'); ?></a></li>
                     <?php foreach ($session_dates as $session_date) { ?>

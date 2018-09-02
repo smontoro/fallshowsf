@@ -17,28 +17,26 @@ while (have_posts()) :
             <h2 class="page-title"><?php the_title() ?></h2>
         </header>
 
-        <div id="ticketsPrimary" class="row">
+        <div id="tickets1" class="row">
 
                 <div class="col-sm-6">
                     <?php echo $gala; ?>
-                    <button>
-                        <a href="<?php echo $gala_ticket_link; ?>" target="_blank">PURCHASE GALA TICKETS</a>
-                    </button>
+                        <a href="<?php echo $gala_ticket_link; ?>" target="_blank" class="section-button">PURCHASE GALA TICKETS</a>
                 </div>
 
 
                 <div class="col-sm-6">
                     <?php echo $show_days; ?>
-                    <button>
-                        <a href="<?php echo $show_day_link; ?>" target="_blank">SHOW & LECTURE TICKETS</a>
-                    </button>
+                   
+                        <a href="<?php echo $show_day_link; ?>" target="_blank" class="section-button">SHOW & LECTURE TICKETS</a>
+                    
                     
                 </div>
          
             
         </div>
 
-        <div id="ticketsSecondary">
+        <div id="tickets2">
             <?php the_content(); ?>
         </div>
             

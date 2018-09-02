@@ -62,6 +62,17 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 		);
 }
 
+/* Replace Text */
+add_filter( 'gettext', 'replace_preview_resume_text', 10, 3 );
+
+function replace_preview_resume_text( $translation, $text, $domain ){
+
+    if( $text === 'More info' ) {
+        $text = 'JOIN US';
+    }
+
+    return $text;
+}
 
 
 

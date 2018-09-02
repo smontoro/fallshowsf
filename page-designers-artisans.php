@@ -15,12 +15,11 @@ while (have_posts()) :
     ?>
 
     <section class="container page-padding" id="designers">
-        <div id="designersPrimary">
             <header class="section-header">
                 <h2 class="page-title"><?php the_title() ?></h2>
             </header>
 
-            <div class="row">
+            <div id="designersPrimary" class="row">
                 <div class="col-sm-6">
                     <?php the_content(); ?>
                 </div><!--/col-6-->
@@ -30,7 +29,7 @@ while (have_posts()) :
                     </div>     
                 </div><!--/col-6-->
             </div><!--/row -->
-        </div>
+   
          
 
         <div class="row" id="designersSecondary">

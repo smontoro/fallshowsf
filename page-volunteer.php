@@ -18,11 +18,13 @@ while (have_posts()) :
             <h2 class="page-title"><?php the_title() ?></h2>
         </header>
 
-        <div id="volunteerPrimary" class="row">
-             <?php the_content(); ?>
+        <div id="volunteer1" class="row">
+            <div class="col-sm-12">
+                <?php the_content(); ?>
+            </div>
         </div>
                 
-        <div id="volunteerSecondary" class="row">
+        <div id="volunteer2" class="row">
             <div class="col-sm-6">
                 <?php echo $benefits; ?>
                 <br>
@@ -33,8 +35,10 @@ while (have_posts()) :
             </div>
         </div>     
 
-        <div id="volunteerTertiary" class="row">
-            <?php echo $committees; ?>
+        <div id="volunteer3" class="row">
+            <div class="col-sm-12">
+                <?php echo $committees; ?>
+            </div>
         </div>    
         
     </section>

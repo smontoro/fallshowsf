@@ -19,24 +19,28 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-transform: initial;
+}
+
+/* Remove bredcrumbs from post */
 .page .fullwidth.breadcrumbs {
     display: none;
 }
-/* Remove bredcrumbs from post */
+
 .breadcrumb {
     display: none;
 }
 
-/* Page margin bottom */
 .page-padding {
   padding-bottom: 10%;
   padding-top: 5%;
 }
 
-.padding-bottom {
-  padding-bottom: 8%;
+.section-padding {
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
-
 .page-title:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
@@ -51,12 +55,44 @@ section.fullwidth .section-header > h2, section.content .section-header > h2, .s
     font-weight: normal;
 }
 
+.section-button {
+  margin-top: 4%;
+}
+
 /* ========================
 NAV
  ==========================*/
 #menu-main {
   font-size: 18px;
-  background-color: lightgrey;
+  background-color: #D9D5CB;
+}
+
+.expandedHeader .nav li a {
+    text-transform: initial;
+    color: black;
+    font-weight: 525;
+}
+
+header.header ul {
+    padding: .5%;
+}
+
+.menu-item-1158 {
+  border: 2px solid black;
+  background: #fff;
+  letter-spacing: 4px;
+}
+
+#menu-main .menu-item {
+  margin: 0 2%;
+}
+
+#menu-main .sub-menu li{
+  padding: 0;
+}
+
+#menu-main .sub-menu li a:hover{
+  background-color: #BC9F60;
 }
 
 .expandedLogo {
@@ -65,8 +101,8 @@ NAV
   font-family: Cinzel;
 }
 
-.expandedLogo img {
-  width: 80%;
+.expandedLogo div:nth-child(2) {
+  padding-top: 1.2%;
 }
 
 .navbar-header {
@@ -91,7 +127,7 @@ NAV
     margin-bottom: 2%;
   }
     .expandedLogo div:first-child, .expandedLogo div:last-child {
-    padding-top: 50px;
+    padding-top: 4.5%;
     display: initial;
   }
     .navbar div {
@@ -100,7 +136,16 @@ NAV
   .nav-bold {
     letter-spacing: 1px;
     font-size: 16px;
+    font-weight: bold;
   }
+
+  header.header ul {
+padding: 0;
+}
+
+#menu-main .current-menu-item {
+border: 1px solid #BC9F60;
+}
 
 
 }
@@ -108,29 +153,24 @@ NAV
 /* ========================
  HEADER 
  ==========================*/
-/* Remove the gold line from here slider */
-.site-slider hr{
-  display:none;
+
+section.fullwidth.site-slider {
+    display: none !important;
 }
+
 
 /* ========================
  HOME
  ==========================*/
  /**Testimonials**/
-.strong-view.modern .testimonial-content p:before {
-    width: 300px !important;
-    content: url('http://fallshowsf.local/wp-content/uploads/2018/08/left-two-quotes.png') !important;
-    padding-right: 10px;
+.strong-view.modern .testimonial-content:before {
+    left: 0 !important;
+    color: darkgrey !important;
 }
 
-.strong-view.modern .testimonial-content p:after {
-    width: 300px !important;
-    content: url('http://fallshowsf.local/wp-content/uploads/2018/08/right-two-quotes.png') !important;
-    padding-left: 10px;
-}
-
-.strong-view.modern .testimonial-content:before,  .strong-view.modern .testimonial-content:after {
-  display: none !important;
+.strong-view.modern .testimonial-content:after {
+    color: darkgrey !important;
+    right: 0 !important;
 }
 
 .strong-view {
@@ -147,38 +187,43 @@ NAV
   padding-right: 30%;
 }
 
-.testimonial-content {
-  font-size: 35px !important;
-  line-height: 50px;
-}
-
 .testimonial-name:before {
   content: '-';
   font-size: 30px;
 }
+
+@media (min-width: 576px) {
+  .testimonial-content {
+    font-size: 3.5rem !important;
+    line-height: 50px;
+  }
+
+}
+
 /**Video**/
 #homeVideo {
-  padding: 5% 0;
+  padding: 10% 0;
 }
+
 #homeVideo iframe {
   height: 500px;
-  width: 800px;
+  width: 1000px;
 }
+
 #homeVideo p {
-  padding-left: 16%;
+  padding-left: 7.5%;
   font-weight: bold;
 }
+
 /**Vignettes**/
 .vignettes-title {
   font-weight: bold;
   color: #BC9F60;
+  padding-top: 5%;
 }
 
-/**Designers & Artisans**/
-#designerHome button {
-    background-color: #fff;
-    border: 2px solid black;
-    padding: 10px 30px;
+#vignettes1 p {
+  padding-top: 10%;
 }
 
 /**Lectures**/
@@ -186,17 +231,16 @@ NAV
  font-size: 16px;
 }
 
-#lectures button {
-  background-color: #fff;
-  border: 2px solid black;
-  padding: 10px 30px;
-}
-
 #lectures img {
   padding-top: 14%;
 }
 
 /**Blog**/
+.articles .articles-title{
+  font-weight: 400 !important;
+  text-transform: initial !important;
+}
+
 #tile_latestnews {
   margin-bottom: 5%;
 }
@@ -226,34 +270,60 @@ NAV
 }
 
 /**Press**/
-#pressHome h2 {
-  color: #999999;
+.press-home-title {
   font-size: 20px;
   font-weight: initial;
   padding-bottom: 2%;
+  color: #999999;
 }
 
-#pressHome button {
-  margin-top: 5%;
+.press-title {
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 10%;
+  min-height: 100px;
 }
 
-#pressHome .read-more-link {
+.press-text {
+  font-size: 15px;
+  padding-top: 5%;
+}
+
+.press .read-more-link {
   font-size: 18px !important;
   color: #595959 !important;
   font-weight: bold;
 }
 
-#pressHome .read-more-link:hover {
+.press .read-more-link:hover {
   color: #bc9f60 !important;
 }
 
-#pressHome .readmore-icon {
+.press .readmore-icon {
   font-size: 12px !important;
 }
 
-#pressHome img {
-  height: 300px;
-  width: 300px;
+.press img {
+  height: 250px;
+  width: 250px;
+}
+
+.press-entry {
+    min-height: 400px;
+    border-bottom: 1px solid #bc9f60;
+    padding-bottom: 10%;
+    position: relative;
+  }
+
+@media(min-width: 900px) {
+  .press-post-content {
+    height: 200px;
+  }
+
+  .items div:first-child {
+    margin-top: 5%;
+  }
+
 }
 
 /**Instagram**/
@@ -267,17 +337,11 @@ NAV
   font-family: 'Lato', sans-serif;
   padding-bottom: 2%;
 }
-
-
     
 
 /* ========================
 ABOUT
  ==========================*/
-#aboutSecondary {
-  text-align: center;
-}
-
 .about-chairs h6 {
   color: #BC9F60;
   margin: 0;
@@ -288,14 +352,20 @@ ABOUT
   margin-top: 50px;
 }
 
-#aboutSecondary div{
+#about1 {
+  padding-bottom: 5%;
+}
+
+#about2 div{
   margin-top: 15px;
 }
 
-#aboutSecondary h5 {
+#about2 h2 {
   margin: 0;
   color: #595959;
   border-bottom: 1px solid black;
+  font-weight: initial;
+  font-size: 25px;
 }
 
 .about-gala div:nth-child(3) {
@@ -313,49 +383,12 @@ hr {
 }
 
 /** Small devices (landscape phones, 576px and up) **/
-@media (min-width: 576px) {
-  #aboutSecondary {
-    text-align: initial;
+/*@media (min-width: 576px) {
+    #about2 {
+      padding: 0 15px;
+      margin: 0
   }
-
-  #aboutSecondary h5 {
-    border-bottom: none;
-  }
-
-  hr {
-    display: initial;
-  }
-
- #aboutSecondary hr {
-    margin: 0;
-    background: #595959;
-    float: right;
-  }
-
-  .about-chairs hr {
-    width: 90%;
-  }
-
-  .about-gala hr {
-    width: 82%;
-  }
-
-  .about-founders hr {
-    width: 86.5%;
-  }
-
-  .about-past-show-chairs hr {
-    width: 85%;
-  }
-
-  .about-staff hr {
-    width: 96%;
-  }
-
-  .about-office hr {
-    width: 80%;
-  }
-}
+}*/
 
 /* ========================
  FAQ
@@ -403,10 +436,6 @@ hr {
 /* ========================
  DESIGNERS & ARTISANS
  ==========================*/
-#designersPrimary img {
-  width: 100%;
-  height: 250px;
-}
 
 #designersPrimary .row {
   padding-bottom: 5%;
@@ -433,23 +462,27 @@ hr {
   padding: 10px 53px;
 }
 
-.cat-video {
-  padding-bottom: 50px;
+#cat3 p:first-child {
+  color: #bc9f60;
 }
 
-.cat-video p {
-  letter-spacing: .3rem;
+#cat2 .section-button {
+  margin-bottom: 10%
 }
 
-#catSecondary img {
+#cat2 img {
   padding-top: 2%;
 }
 
-#catSecondary div:first-child {
+#cat2 div:first-child {
   padding: 0 3rem;
 }
 
-
+@media (min-width: 576px) {
+   #cat1 div:first-child, #cat2 div:first-child {
+    padding-left: 2%;
+  }
+}
 
 
 /* ========================
@@ -492,6 +525,16 @@ BLOG
 
 .category .entry .entry-title {
     height: auto !important;
+    font-weight: 400;
+}
+
+/***Blog Single***/
+.single-post .entry-author {
+  display: none;
+}
+section.fullwidth.header-solid h1 {
+  text-transform: initial;
+  font-weight: 400;
 }
  
 @media(min-width: 900px) {
@@ -551,8 +594,9 @@ BLOG
 #footer-sidebar2 {
   background-color: #435A62;
   width: 100%;
-  height: 225px;
-  padding: 3%;
+  height: 150px;
+  padding-top: 3%;
+  padding-bottom: 0;
 }
 
 #footer-sidebar2 div:first-child {
@@ -566,6 +610,10 @@ section.fullwidth.social-links .icons i{
 
 section.fullwidth.social-links .icons a{
   margin: 0 !important;
+}
+
+section.fullwidth.social-links .icons i.bottom {
+    width: initial;
 }
 
 #tile_connect {
@@ -600,7 +648,7 @@ section.fullwidth.social-links .icons a{
  #footer-sidebar3 {
   color: #EAE6E6;
   background-color: #435A62;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
  }
 
  #quick-links h4 {
@@ -646,6 +694,9 @@ section.fullwidth.social-links .icons a{
 
 #footer-contact p {
   padding-top: 21px;
+  margin-bottom: 0;
+  color: grey;
+  font-size: 15px;
 }
 
 #quick-links {
@@ -694,6 +745,10 @@ section.fullwidth.social-links .icons a{
   font-size: 20px;
 }
 
+#quick-links ul li {
+  padding: 1% 0;
+}
+
 }
 
 /* ========================
@@ -709,73 +764,14 @@ section.fullwidth.social-links .icons a{
 }
 
 
-/* ========================
-PRESS
- ==========================*/
-.press-post-content {
-    border-bottom: 1px solid #bc9f60;
-    margin-bottom: 25px;
-    padding-bottom: 40px;
-}
-
-#press img {
-  height: 300px;
-  width: 300px;
-}
-
-#press .press-content {
-  padding-top: 5%;
-  min-height: auto;
-}
-
-.press-content a {
-    font-size: 18px;
-    color: #595959;
-    font-weight: bold;
-}
-
-.press-content a:hover {
-  color: #bc9f60;
-}
-
-.press-content .readmore-icon {
-  font-size: 11px;
-} 
-
-.press-content .entry-date {
-    position: relative;
-    z-index: 1;
-    padding: 6px 9px;
-    line-height: 1em;
-    background: rgba(188, 159, 96, 0.8);
-    color: white;
-    bottom: 34px;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
- 
-@media(min-width: 900px) {
- #press .press-content {
-  min-height: 550px;
-  }
-  .press-post-content {
-    height: 150px;
-  }
-
-}
-
 
 /* ========================
 VOLUNTEER
  ==========================*/
-#volunteerSecondary {
-  padding: 5% 0;
-}
-#volunteerSecondary ul li {
+#volunteer2 ul li {
   list-style: initial;
 }
-#volunteerSecondary ul {
+#volunteer2 ul {
   padding-left: 5%;
 }
 
@@ -790,20 +786,16 @@ EXHIBITORS
 }
 
 .page-id-333 h1:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 20%; /* Change this to whatever width you want. */
-    padding-top: 12px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    content: ""; 
+    display: block; 
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 12px; 
+    border-bottom: 1px solid black; 
 }
 
 .exhibitor .category .entry .entry-title {
     height: auto !important;
-}
-
-.exhibitor-name span {
-  font-size: 20px !important;
 }
 
 .exhibitor-about span{
@@ -811,23 +803,30 @@ EXHIBITORS
   line-height: initial;
 }
 
+.exhibitors-wrapper .exhibitor-name {
+font-weight: 400 !important;
+}
+
 /* ========================
 SPONSORS
  ==========================*/
-
-.page-id-519 h2 {
+.page-id-519 h2{
     font-family: Cinzel;
     font-weight: normal;
     font-size: 40px !important;
 }
 
-.page-id-519 h2:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 20%; /* Change this to whatever width you want. */
-    padding-top: 12px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+.page-id-519 h2:last-child:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 20%;
+    padding-top: 12px; 
+    border-bottom: 1px solid black; 
+}
+
+.page-id-519 .section-button {
+  margin-bottom: 10%;
 }
 
 /* ========================
@@ -837,12 +836,12 @@ TICKETS
   display: none !important;
 }
 
-#ticketsSecondary ul {
+#tickets2 ul {
   padding: 0 5%;
   line-height: initial;
 }
 
-#ticketsSecondary ul li {
+#tickets2 ul li {
   list-style: initial;
   font-size: 18px;
 }
@@ -850,10 +849,6 @@ TICKETS
 .ticket-box .box-price {
     font-size: 30px;
     font-weight: initial;
-}
-
-.section-button {
-  display: none;
 }
 
 .ticket-box {
@@ -865,17 +860,11 @@ TICKETS
   padding-top: 10%;
 }
 
-#ticketsPrimary button {
-  background-color: #fff;
-    border: 2px solid black;
-    padding: 10px 30px;
-}
-
-#ticketsPrimary div:first-child {
+#tickets1 div:first-child {
   border-right: 2px solid grey;
   padding-left: 10%;
 }
-#ticketsPrimary div:last-child {
+#tickets1 div:last-child {
   padding-left: 12%;
 }
 
@@ -883,14 +872,17 @@ TICKETS
   display: none;
 }
 
-/* ========================
-TICKETS
- ==========================*/
-#visit .row {
-  border-bottom: 2px solid lightgrey;
-  padding: 5% 0;
+.ticket-box:hover .section-button, .ticket-box.featured .section-button {
+    display: none;
 }
 
+.ticket-box .section-button {
+    display: none;
+}
+
+/* ========================
+VISIT
+ ==========================*/
 #visit5 ul li {
   list-style: initial;
   margin-left: 5%;
@@ -899,6 +891,23 @@ TICKETS
 
 #visit .row:last-child {
   border-bottom: none;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10%;
+}
+
+#visit .col-sm-6 {
+  margin: 5% 0;
+}
+
+@media (min-width: 576px) {
+  #visit .row {
+  border-bottom: 2px solid lightgrey;
+}
+
 }
 
 /* ========================
@@ -927,13 +936,27 @@ SCHEDULE OF EVENTS
 .fa-filter:before {
     content: "\f002";
     color: #fff;
+    text-transform: initial;
 }
 
 .schedule-heading, .schedule-heading .stickit {
   background-color: grey;
   color: #fff;
 }
+/**Single Sessions**/
+.single-session .section-button {
+  display: none;
+}
 
+.schedule-single a {
+  padding-bottom: 2%;
+}
 
+/* ========================
+PHOTO GALLERY
+ ==========================*/
+ .fts-single-pin-meta-wrap{
+  display: none;
+ }
 
 

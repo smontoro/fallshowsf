@@ -18,10 +18,11 @@ while (have_posts()) :
     vertoh_include_page_header();
     ?>
 
-    <section class="container page-padding" id="visit">
+    <section id="visit" class="container page-padding">
         <header class="section-header">
             <h2 class="page-title"><?php the_title() ?></h2>
         </header>
+
 
         <div id="visit1" class="row">
             <div class="col-sm-6">
@@ -29,15 +30,15 @@ while (have_posts()) :
             </div>
             <div class="col-sm-6">
                 <img src="<?php echo $dates_hours_image; ?>">
-            </div>       
+            </div>     
         </div>
 
         <div id="visit2" class="row">
-            <div class="col-sm-6">
-                <?php echo $map; ?>
-            </div>
-            <div class="col-sm-6"> 
+            <div class="col-sm-6 col-sm-push-6"> 
                 <?php echo $location; ?>
+            </div>
+            <div class="map col-sm-6 col-sm-pull-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2169007850152!2d-122.43241438500132!3d37.808388217998456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127313943ef%3A0xb83f579746ef207f!2sFestival+Pavilion%2C+38+Fort+Mason%2C+San+Francisco%2C+CA+94123!5e0!3m2!1sen!2sus!4v1535239490665" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -51,12 +52,12 @@ while (have_posts()) :
         </div>
 
         <div id="visit4" class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-6-push"> 
+                <?php echo $dining; ?>
+            </div>
+            <div class="col-sm-6 col-sm-6-pull">
                 <img src="<?php echo $dining_image ?>">
                 
-            </div>
-            <div class="col-sm-6"> 
-                <?php echo $dining; ?>
             </div>
         </div>
 

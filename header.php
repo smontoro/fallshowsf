@@ -61,13 +61,17 @@ if (is_home()) {
                         <div class="expandedLogo row">
                             <div class="col-sm-4">
                                 <p>OCTOBER 11 - 14, 2018</p>
-                                <p><strong class="nav-bold">OUR 37TH YEAR</strong></p>
+                                <p class="nav-bold">OUR 37TH YEAR</p>
                             </div>
                             <div class="col-sm-4">
+                               <a href="http://fallshowsf.local/">
                                 <img src="<?php echo(!empty($custom_logo_url)) ? $custom_logo_url : get_template_directory_uri() . '/images/logo.png'; ?>" alt="" class="image-fluid"/>
+                               </a>
+                                    
+                               
                             </div>
                             <div class="col-sm-4">
-                                <p><strong class="nav-bold">THE ANNUAL BENFIT FOR</strong></p>
+                                <p class="nav-bold">THE ANNUAL BENFIT FOR</p>
                                 <p>ENTERPRISE FOR YOUTH</p>
                             </div>
                         

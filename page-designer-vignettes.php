@@ -18,18 +18,23 @@ while (have_posts()) :
     $designer_img_4=get_field('designer_img_4');
     $designer_name_4=get_field('designer_name_4');
 
+    $extra_text=get_field('extra_text');
+
 
     vertoh_include_page_header();
     ?>
 
-       <section id="vignettes" class="container padding-bottom">
-            <header class="row">
-                <?php the_content(); ?>
-            </header>
+       <section id="vignettes" class="container section-padding">
             <div class="row">
-                <p class="vignettes-title"><?php echo $designer_vignettes_title; ?></p>
+                <div class="col-sm-12">
+                    <?php the_content(); ?>
+                    <p class="vignettes-title">
+                        <?php echo $designer_vignettes_title; ?>
+                    </p>
+                </div>
             </div>
-            <div class="row text-center"> 
+
+            <div id="vignettes1" class="row text-center"> 
                 <div class="col-sm-3">
                     <img class="img-circle" src="<?php echo $designer_img_1; ?>">
                     <p><?php echo $designer_name_1; ?></p>
@@ -46,7 +51,14 @@ while (have_posts()) :
                     <img class="img-circle" src="<?php echo $designer_img_4; ?>">
                     <p><?php echo $designer_name_4; ?></p>
                 </div>
-                
+            </div>
+
+            <div id="vignettes2" class="row">
+                <div class="col-sm-12">
+                    <?php echo $extra_text; ?>
+               
+                    <a href="http://fallshowsf.local/designers-artisans-circle/" class="section-button">SEE THE LIST</a>
+                 </div>
             </div>
 
     
